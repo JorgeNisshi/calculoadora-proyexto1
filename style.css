@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-blacktotal: #160d18;
+  --color-morado: #23145b;
+  --color-turquesa: #09456c;
+  --color-verdeAgua: #026f6e;
+  --color-verdeClaro: #1ca39e;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-color: var(--color-turquesa);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  color: rgb(218, 215, 215);
+}
+
+.calculadora__resultados {
+  width: 750px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.valores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.operaciones12 {
+  left: 620px;
+  padding: 20px 20px 0px;
+  font-size: 3rem;
+  color: #160d18;
+  text-align: right;
+}
+
+.operacion1 {
+  font-size: 5rem;
+  color: red;
+  padding: 20px 20px 0px;
+}
+
+.valor {
+  padding: 0px 20px 10px;
+  text-align: end;
+  font-size: 3rem;
+  color: #160d18;
+}
+
+.calculadora__numeros {
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.calculadora__operaciones {
+  position: absolute;
+  left: 24px;
+  bottom: 50px;
+  width: 260px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.2rem;
+
+  padding: 35px 19px;
+}
+
+.operaciones {
+  display: inline-flex;
+  background-color: var(--color-verdeClaro);
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 4px rgb(113, 113, 113);
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.numero1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.2rem;
+  padding: 35px 38px;
+}
+
+.numeros {
+  display: inline-flex;
+  background-color: var(--color-verdeClaro);
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 4px 8px 4px rgb(113, 113, 113);
+  justify-content: center;
+  font-size: 2.5rem;
+}
